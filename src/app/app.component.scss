@@ -1,0 +1,35 @@
+.zoom-sequence {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .zoom-letter {
+    display: inline-block;
+    animation: zoomInOut 1s ease-in-out infinite;
+    opacity: 0;
+    animation-delay: 0s;
+  }
+  
+  /* Keyframes to zoom in and out */
+  @keyframes zoomInOut {
+    0%, 100% {
+      transform: scale(1); /* Normal size */
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.5); /* Zoom in */
+      opacity: 1;
+    }
+  }
+  
+  /* Delay for each letter in sequence */
+  .zoom-letter:nth-child(1) { animation-delay: 0s; }
+  .zoom-letter:nth-child(2) { animation-delay: 0.2s; }
+  .zoom-letter:nth-child(3) { animation-delay: 0.4s; }
+  .zoom-letter:nth-child(4) { animation-delay: 0.6s; }
+  .zoom-letter:nth-child(5) { animation-delay: 0.8s; }
+  .zoom-letter:nth-child(6) { animation-delay: 1s; }
+  .zoom-letter:nth-child(7) { animation-delay: 1.2s; }
+  .zoom-letter:nth-child(8) { animation-delay: 1.4s; }
+  
